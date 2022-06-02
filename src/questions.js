@@ -41,10 +41,10 @@ const questions = [
     name: "test",
     message: "Please enter any testing procedures for your project:",
   },
-  
+
   {
     type: "input",
-    name: "name",
+    name: "fullName",
     message: "What is your full name?",
   },
 
