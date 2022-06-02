@@ -18,13 +18,11 @@ const questions = [
     message: "What are the installation instructions for your project?",
   },
 
-  
   {
     type: "input",
     name: "usage",
     message: "Please enter your project usage information:",
   },
-
 
   {
     type: "list",
@@ -41,24 +39,31 @@ const questions = [
   {
     type: "input",
     name: "test",
-    message: "Please enter any testing procedures for your project:", 
+    message: "Please enter any testing procedures for your project:",
   },
+  
+  {
+    type: "input",
+    name: "name",
+    message: "What is your full name?",
+  },
+
   {
     type: "input",
     name: "userName",
     message: "What is your GitHub username?",
-},
+  },
 
-{
+  {
     type: "input",
     name: "email",
     message: "What is your email address?",
-},
- ];
+  },
+];
 
- console.log(questions);
+console.log(questions);
 
- //export questions
+//export questions
 module.exports = {
   questions: questions,
 };
