@@ -1,10 +1,12 @@
 //function to generate markdown for GENERATED-README.md file
-function generateMarkdown (answers) {
-    return `# Project Title ![MIT](https://img.shields.io/badge/MIT-License-green)
+function generateMarkdown(answers) {
+  return `# ${answers.title} ![alt text](${encodeURI(
+    `https://img.shields.io/badge/${answers.license}-License-green`
+  )})
 
     ## Table of Contents
     
-    - [Project Title !MIT](#project-title-)
+    
       - [Table of Contents](#table-of-contents)
       - [Description](#description)
       - [Installation](#installation)
@@ -16,45 +18,54 @@ function generateMarkdown (answers) {
     
     ## Description
     
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    ${answers.description}
     
     ## Installation
     
     Please follow the instructions below:
+
+    \`\`\`\
     
+    ${answers.installation}
      
-    npm install
+    \`\`\`\
     
     
     ## Usage
     
     Please follow the instructions below:
     
-    
-    npm run start
+    \`\`\`\
+
+    ${answers.usage}
    
-    
+    \`\`\`\
+
     ## License
+
+    ${answers.license}
     
-    MIT License
-    
+     
     ## Contributing
     
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    ${answers.contributing}
     
     ## Tests
-    
+
     Please follow the instructions below:
+
+    \`\`\`\
+
+    ${answers.test}
     
-   
-    npm run test
-    
+    \`\`\`\
     
     ## Questions
     
-    Please contact me on my email: myemail@email.com
+    Please contact me if you have any queries on my email: ${answers.email}
     
-    Visit my GitHub profile [here](https://github.com/surajverma2587)`;
-};
+    Visit my GitHub profile [here](https://github.com/${userName})`;
+}
 
 module.exports = generateMarkdown;
+
