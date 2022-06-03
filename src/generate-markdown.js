@@ -59,6 +59,10 @@ function generateMarkdown(answers) {
     ${answers.test}
     
     \`\`\`\
+
+    ## Author
+
+    ${answers.fullName}
     
     ## Questions
     

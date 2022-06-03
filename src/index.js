@@ -12,10 +12,15 @@ const generateMarkdown = require("./generate-markdown");
 const fs = require("fs");
 
 // // Creating a function to initialize questions
-// const init = async () => {
-//   //prompt the questions and get answers
-//   const answers = await inquirer.prompt(questions);
+  const init = async () => {
 
-//   console.log(answers);
-// };
-// init();
+// //   //prompt the questions and get answers
+  const answers = await inquirer.prompt(questions);
+
+// const readme=generateMarkdown(answers);
+console.log (answers);
+// //
+fs.writeFileSync("./GENERATED-README.md", readme);
+ };
+
+  init();
