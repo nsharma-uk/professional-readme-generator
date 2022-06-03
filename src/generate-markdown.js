@@ -68,7 +68,7 @@ function generateMarkdown(answers) {
     
     Please contact me if you have any queries on my email: ${answers.email}
     
-    Visit my GitHub profile [here](https://github.com/${userName})`;
+    Visit my GitHub profile [here](https://github.com/${answers.userName})`;
 }
 
 module.exports = generateMarkdown;
