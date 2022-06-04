@@ -8,15 +8,21 @@ This project uses node.js to create a command-line application that dynamically 
 
  
   - [Project Description](#description)
-  -  [Technologies](#technologies)
+  - [Technologies](#technologies)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  -
   - [Tests](#tests)
-  - [Questions](#questions)
+  - [Author](#author)
+  - [Contact](#contact)
 
 ## Project Description
+This project uses node.js to create a command-line application that dynamically generates a professional README.md file from a user's input.
+
+The user is asked series of prompt questions in the terminal about the information of their project.
+
+After the user's submited responses, a markdown file will be dynamically generated and will include a bulleted table of contents (with navigation links), installation instructions, license type selected from a list as well as an email address and github information.
+
 
 ## Technologies
 
@@ -33,27 +39,22 @@ Clone the repository, using SSH keys:
 ```
 git clone git@github.com:nsharma-uk/professional-readme-generator.git
 ```
-In the new repository install the required packages:
+In the new repository install and run the required packages:
 ```
 
 npm install
-```
-
-## Usage
-
-Please follow the instructions below to run this project:
-
-```
 npm run start
 ```
+
+## Demo video of the application
+
+![screenshot of deployed page](markdownscreencast.gif)
+
+[Link](https://drive.google.com/file/d/16pi0ID0U9yTEYhjWp0E1126nElMcah9p/view?usp=sharing)
 
 ## License
 
 MIT License
-
-
-
-
 
 ## Tests
 
@@ -73,3 +74,5 @@ N Sharma
 Please contact me on my email: [email](nsharmauk711@gmail.com) 
 
 Visit my GitHub profile [here](https://github.com/nsharma-uk)
+
+

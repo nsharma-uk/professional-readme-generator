@@ -1,13 +1,11 @@
 //function to generate markdown for GENERATED-README.md file
 function generateMarkdown(answers) {
-return `# ${answers.title} ![alt text](${encodeURI(
-`https://img.shields.io/badge/${answers.license}-License-green`
-)})
+  return `# ${answers.title} ![alt text](${encodeURI(
+    `https://img.shields.io/badge/${answers.license}-License-green`
+  )})
 
 ## Table of Contents
 
- 
-- [Table of Contents](#table-of-contents)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,7 +20,8 @@ ${answers.description}
 
 ## Installation
  
-Please follow the instructions below:
+Please follow the instructions below to clone this project:
+
 \`\`\`\
  
 ${answers.installation}
@@ -31,13 +30,8 @@ ${answers.installation}
  
  
 ## Usage
- 
-Please follow the instructions below:
 
-\`\`\`\
 ${answers.usage}
-
-\`\`\`\
 
 ## License
 ${answers.license}
@@ -47,20 +41,23 @@ ${answers.license}
 ${answers.contributing}
  
 ## Tests
+
 Please follow the instructions below:
+
 \`\`\`\
+
 ${answers.test}
 
 \`\`\`\
+
 ## Author
 ${answers.fullName}
 
 ## Questions
 
-Please contact me if you have any queries on my email: ${answers.email}
+Please contact me if you have any queries on my email: ${answers.email};
 
 Visit my GitHub profile [here](https://github.com/${answers.userName})`;
 }
 
 module.exports = generateMarkdown;
-

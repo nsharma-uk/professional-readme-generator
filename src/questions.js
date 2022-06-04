@@ -61,8 +61,6 @@ const questions = [
   },
 ];
 
-console.log(questions);
-
 //export questions
 module.exports = {
   questions: questions,
